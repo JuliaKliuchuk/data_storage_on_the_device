@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application/read_write_file.dart';
+import 'package:flutter_application/shared_preferences.dart';
 
 void main() => runApp(const MyApp());
 
@@ -39,7 +40,7 @@ class MyTabBar extends StatelessWidget {
         body: const TabBarView(
           children: [
             ReadWriteFile(),
-            Icon(Icons.directions_transit, size: 350),
+            SharedPreferece(),
             Icon(Icons.directions_car, size: 350),
           ],
         ),
