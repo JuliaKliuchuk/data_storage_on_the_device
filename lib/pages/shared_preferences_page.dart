@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SharedPreferece extends StatefulWidget {
-  const SharedPreferece({super.key});
+// work with local data (variables). read and write
+// shared_preferences was used
+
+class SharedPreference extends StatefulWidget {
+  const SharedPreference({super.key});
 
   @override
-  SharedPrefereceState createState() => SharedPrefereceState();
+  SharedPreferenceState createState() => SharedPreferenceState();
 }
 
-class SharedPrefereceState extends State<SharedPreferece> {
+class SharedPreferenceState extends State<SharedPreference> {
   late SharedPreferences _prefs;
 
   static const String kNumberPrefKey = 'number_pref';

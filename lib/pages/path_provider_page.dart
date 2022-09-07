@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
 
+// working with local files. read and write
+// path_provider was used
 class ReadWriteFile extends StatefulWidget {
   const ReadWriteFile({super.key});
 
@@ -15,7 +17,6 @@ class ReadWriteFileState extends State<ReadWriteFile> {
 
   static const String kLocalFileName = 'demo_localfile.txt';
   String _localFileContent = '';
-  // ignore: unused_field
   String _localFilePath = kLocalFileName;
 
   @override
